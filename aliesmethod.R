@@ -14,7 +14,7 @@ for (si in 1:s){
 
 # Calculate Q -----
 
-P <- c(.2,.2,.05,.15,.3,.1 )#z_v  ## probability vector
+P <- z_v#z_v  ## probability vector
 n_P <- length(P)
 Q <- matrix(0,nrow = n_P-1 , ncol = n_P)
 P_temp <- matrix(c(P,integer(n_P*n_P-n_P)),nrow = n_P , ncol = n_P , byrow = T)
